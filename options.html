@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>Polucom Dialer Options</title>
+		<link rel="stylesheet" href="bootstrap.min.css"/>	
+	</head>
+	<body>
+		<main>
+			<div class="container  py-5">
+				<div class="col-sm-8  offset-sm-2">						
+			
+					<div class="form-group">
+						<label for="formAddress">Phone Endpoint Address</label>
+						<div class="input-group">
+							<input type="text" class="form-control" id="formAddress" aria-describedby="textHelpAddress" placeholder="Enter address" data-error="Before you wreck yourself" required/>
+							<button id="test" type="button" class="btn btn-primary">Test</button>
+						</div>
+						<small id="textHelpAddress" class="form-text text-muted">Including HTTP/HTTPS and port number if not standard. It must be enabled in your phone.</small>					
+					</div>
+					
+					<div class="form-group">
+						<label for="formUsername">Authentication</label>
+						<input type="text" class="form-control" id="formUsername" placeholder="Username" aria-describedby="textHelpAuth"/>
+						<input type="password" class="form-control" id="formPassword" placeholder="Password" aria-describedby="textHelpAuth"/>
+						<small id="textHelpAuth" class="form-text text-muted">Provide authentication information if required.</small>
+					</div>
+					<div class="form-group">
+						<label for="formLine">Line Number</label>
+						<input type="number" class="form-control" min="1" step="1" max="16" id="formLine" placeholder="Line Number" aria-describedby="textHelpLine"/>
+						<small id="textHelpLine" class="form-text text-muted">Line number used by Polycom.</small>
+					</div>			  
+					<div class="form-group">
+						<label for="formPrefix">Prefix Number</label>
+						<input type="text" class="form-control" id="formPrefix" placeholder="Prefix Number" aria-describedby="textHelpPrefix"/>
+						<small id="textHelpPrefix" class="form-text text-muted">Prefix to dial before every number.</small>
+					</div>			  
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="formDTMF"/>
+						<label class="form-check-label" for="formDTMF">Enable DTMF option</label>
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="formSingletone"/>
+						<label class="form-check-label" for="formSingletone">Send DTMF one tone at a time</label>			
+					</div>  
+
+					<button id="save" type="submit" class="btn btn-primary">Save</button>					
+
+					<div class="col-xs-3 text-right">&nbsp;</div>
+					<div class="alert" role="alert" id="formStatus" style="visibility: hidden">	</div>
+				</div>		  
+			</div>
+		</main>
+		<script src="options.js"></script>
+	</body>
+</html>
