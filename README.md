@@ -1,13 +1,7 @@
-Copy-as-Plain-Text Google Chrome Extension
+Polycom Dialer Google Chrome Extension
 ----
 
-This is a simple extension that adds a copy-as-plain-text context menu option to Google Chrome.
-
-To use, clone this repository to your computer.
-
-```
-$ git clone git@github.com:shekhargulati/copy-as-plain-text-chrome-extension.git
-```
+This simple extension allows you to dial phone numbers and send DTMF tones using a Polycom VVX series phone with REST API enabled.
 
 Install with these steps:
 
@@ -17,6 +11,5 @@ Install with these steps:
 
 After the extension is added, a new context menu option will be available.
 
-
-
 Icon made by Freepik from www.flaticon.com"# PolycomDialer" 
+
