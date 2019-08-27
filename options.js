@@ -58,6 +58,7 @@ function restore_options() {
     username: "",
 	password: "",
 	line: "1",
+	prefix : "",
 	DTMF: false,
 	singletone: false
 	}, function(items) {
@@ -66,7 +67,7 @@ function restore_options() {
 		document.getElementById('formUsername').value = items.username;
 		document.getElementById('formPassword').value = items.password;		
 		document.getElementById('formLine').value = items.line;
-		document.getElementById('formPrefix').value = items.preifx;		
+		document.getElementById('formPrefix').value = items.prefix;		
 		document.getElementById('formDTMF').checked = items.DTMF;
 		document.getElementById('formSingletone').checked = items.singletone;
 	}
